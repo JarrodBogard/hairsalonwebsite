@@ -45,77 +45,55 @@ header nav ul li a:hover {
 }
 
 main {
-    width: auto;
-    height: 733px;
-    /* max-width: 100%;
-    max-height: 100%; */
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 24px;
+}
+
+main h1 {
+    width: 25%;
+    background-color: rgb(39, 36, 36);
+    color: white;
+    font-weight: 900;
+    font-size: 48px;
+    padding: 10px 20px;
+    margin: 20px;
 }
 
 main img {
-    width: 100%;
-    height: 100%;
-    /* object-fit: 100%;
-    object-position: 50% 50%; */
-}
-
-
-.main-container {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 51%;
-    top: 25%;
-}
-
-.main-container h2, h3, button {
     margin: 10px;
-    padding: 15px;
-    font-weight: 700;
-    align-self: flex-start;
+    width: 35%;
+
 }
 
-.main-container h2 {
-    background-color: white;
-    font-size: 1.5vw;
+/* main img:hover {
+    opacity: 10;
+} */
+
+main h2 {
+    /* font-size: 20px; */
+    margin: 30px 0 0 0;
+    width: 35%;
 }
 
-.main-container h3 {
-    background-color: grey;
-    font-size: 1vw;
+main p {
+    width: 28%;
 }
 
-.main-container button {
-    background-color: rgb(41, 112, 112);
-    color: rgb(207, 198, 198);
-    border: 0;
-    cursor: pointer;
+main p:nth-last-child(1) {
+    margin: 0 0 30px 0;
 }
 
-section {
-    display: flex;
-    justify-content: center;
-    margin: 25px;
-    padding: 0 100px;
-}
+/* main p:nth-child(last-child) {
+    margin-bottom: 100px;
+} */
 
-section a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+main p a {
     text-decoration: none;
-    color: grey;
-    font-weight: 900;
-    padding: 0 20px;
-}
-
-section a img {
-    border: 2px solid grey;
-}
-
-section a:hover {
-    color: aqua;
+    font-weight: 700;
+    color: black;
 }
 
 footer {
@@ -184,19 +162,3 @@ footer nav ul li a {
 #pinterest:hover {
 	background-position: -44px -132px;
 }
-
-
-
-
-/* main {
-    width: 100%;
-    height: 733px;
-    background-image: url("img-folder/the-beacon.jpg");
-    background-color: aquamarine;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0 0 500px;
-} */

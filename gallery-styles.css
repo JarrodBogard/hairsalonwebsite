@@ -7,6 +7,7 @@
 body {
     width: 100%;
     /* border: 1px solid grey; */
+    line-height: 1;
 }
 
 header {
@@ -21,7 +22,7 @@ header img {
 
 header nav {
     width: 30%;
-    margin: 30px 18px 35px 0;
+    margin: 30px 18px 40px 0;
 }
 
 header nav ul {
@@ -45,77 +46,46 @@ header nav ul li a:hover {
 }
 
 main {
-    width: auto;
-    height: 733px;
-    /* max-width: 100%;
-    max-height: 100%; */
-    position: relative;
-}
-
-main img {
-    width: 100%;
-    height: 100%;
-    /* object-fit: 100%;
-    object-position: 50% 50%; */
-}
-
-
-.main-container {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 51%;
-    top: 25%;
-}
-
-.main-container h2, h3, button {
-    margin: 10px;
-    padding: 15px;
-    font-weight: 700;
-    align-self: flex-start;
-}
-
-.main-container h2 {
-    background-color: white;
-    font-size: 1.5vw;
-}
-
-.main-container h3 {
-    background-color: grey;
-    font-size: 1vw;
-}
-
-.main-container button {
-    background-color: rgb(41, 112, 112);
-    color: rgb(207, 198, 198);
-    border: 0;
-    cursor: pointer;
-}
-
-section {
-    display: flex;
-    justify-content: center;
-    margin: 25px;
-    padding: 0 100px;
-}
-
-section a {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
-    color: grey;
-    font-weight: 900;
-    padding: 0 20px;
+    width: 100%;
+    /* min-width: 960px; */
 }
 
-section a img {
+h1 {
+    width: 15%;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    padding: 10px;
+    margin: 0 0 35px 0;
+    background-color: grey;
+    color: white;
+    font-size: 3.25vw;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 15px;
+    width: 50%;
+    margin: 0 0 40px 0;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.grid-container a img {
+    margin: 0;
+    padding: 0;
     border: 2px solid grey;
+    width: 100%;
+    height: 100%;
 }
 
-section a:hover {
-    color: aqua;
+.grid-container a img:hover {
+    opacity: 1;
 }
 
 footer {
@@ -184,19 +154,3 @@ footer nav ul li a {
 #pinterest:hover {
 	background-position: -44px -132px;
 }
-
-
-
-
-/* main {
-    width: 100%;
-    height: 733px;
-    background-image: url("img-folder/the-beacon.jpg");
-    background-color: aquamarine;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0 0 500px;
-} */
