@@ -1,110 +1,222 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    overflow-x: hidden;
-}
-
-.body-container {
-    width:100%;
-    height: auto;
-    /* display: flex; */
-    flex-direction: column;
-}
-
-header, main, section, footer {
     width: 100%;
-    /* flex: 1; */
+    /* border: 1px solid grey; */
 }
 
 header {
-    /* height: 250px; */
-    padding: 40px 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin: 0 0 20px;
 }
 
 header img {
-    padding: 0 0 20px 0;
+    margin: 40px 0 10px 0;
 }
 
-nav a {
-    margin: 5px 24px;
-    padding: 0 0 50px 0;
+header nav {
+    width: 35em;
+    margin: 30px 0px 35px 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
     text-decoration: none;
-    font-size: 20px;
-    font-weight: 900;
+    text-transform: uppercase;
     color: grey;
+    font-weight: 900;
 }
 
-nav a:hover {
+header nav ul li a:hover {
     color: aqua;
 }
 
 main {
-    /* display: block; */
-    width: 100%;
-    /* height: 500px;
-    background-image: url("img folder/the-beacon.jpg");
-    background-size: cover;
-    background-repeat: no-repeat; */
+    width: auto;
+    height: auto;
+    /* max-width: 100%;
+    max-height: 100%; */
     position: relative;
-    border: 1px solid black;
+    /* border: 2px solid black; */
 }
 
 main img {
     width: 100%;
     height: 100%;
-    /* object-fit: fill; */
-   
+    vertical-align: middle;
+    /* object-fit: 100%;
+    object-position: 50% 50%; */
 }
 
+
 .main-container {
-    width: 100%;
+    /* width: 450px; */
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    top: 30%;
     left: 50%;
+    top: 50%;
+    margin: -171px 0 -480px;
+    padding: 0 0 0 20px;
+    /* border: 2px solid black; */
+}
+
+.main-container h2, h3, button {
+    margin: 10px;
+    padding: 15px;
+    font-weight: 700;
+    align-self: flex-start;
+}
+
+.main-container h2 {
+    background-color: white;
+    /* font-size: 1.5vw; */
+    font-size: 1.7em;
+}
+
+.main-container h3 {
+    background-color: grey;
+    /* font-size: 1vw; */
+    font-size: 1.20em;
+}
+
+.main-container button {
+    background-color: rgb(41, 112, 112);
+    color: rgb(207, 198, 198);
+    border: 0;
+    cursor: pointer;
+}
+
+.main-container button:hover {
+    opacity: .7;
 }
 
 section {
-    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin: 25px;
+    padding: 0 100px;
 }
 
 section a {
-   margin: 20px 30px ;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   text-align: center;
-   text-decoration: none;
-   font-weight: 900;
-   color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: grey;
+    font-weight: 900;
+    padding: 0 20px;
 }
+
+section a img {
+    border: 2px solid grey;
+}
+
+section a img:hover {
+    opacity: .8;
+    transition: 0.5s ease-in-out;
+}
+
+section a h2 {
+    padding: 25px 0 10px;
+    text-transform: uppercase;
+    color: black;
+}
+
 footer {
-    height: 100px;
+    height: 125px;
     background-color: darkgrey;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin: 0 0 30px 0;
 }
 
-footer p {
-    padding: 0px 100px 0 0;
-}
-
-footer nav {
-    padding: 0px 0px 0px 100px;
-}
-
-footer nav a {
+footer nav ul {
+    display: flex;
     margin: 0;
-    padding: 0 5px;
-
+	overflow: hidden;
+	padding: 0;
 }
+
+footer nav ul li {
+    /* display: flex; */
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
+    width: 44px;
+}
+
+footer nav ul li a {
+    background: url(img-folder/icons.jpg) no-repeat 0 0;
+    display: block;
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    /* text-indent: -99999px; */
+    width: 44px;
+    text-decoration: none;
+}
+
+#twitter {
+    background-position: 0 0;
+}
+
+#twitter:hover {
+    background-position: -44px 0;
+}
+
+#facebook {
+    background-position: 0 -44px;
+}
+
+#facebook:hover {
+	background-position: -44px -44px;
+}
+
+#googleplus {
+    background-position: 0 -88px;
+}
+
+#googleplus:hover {
+    background-position: -44px -88px;
+}
+
+#pinterest {
+	background-position: 0 -132px;
+}
+
+#pinterest:hover {
+	background-position: -44px -132px;
+}
+
+
+
+
+/* main {
+    width: 100%;
+    height: 733px;
+    background-image: url("img-folder/the-beacon.jpg");
+    background-color: aquamarine;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 0 500px;
+} */
