@@ -21,7 +21,7 @@ header img {
 
 header nav {
     width: 35em;
-    margin: 30px 0px 35px 0;
+    margin: 30px 0px 40px 0;
 }
 
 header nav ul {
@@ -47,55 +47,49 @@ header nav ul li a:hover {
 main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    line-height: 24px;
+    margin: 20px 0;
 }
 
 main h1 {
-    width: 500px;
-    background-color: rgb(39, 36, 36);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(27, 25, 25);
     color: white;
-    font-weight: 900;
-    padding: 15px;
-    margin: 20px;
+    margin: 20px 0;
+    padding: 10px 20px;
     font-size: 2.25em;
-    text-transform: uppercase;
+    font-weight: 900;
+
 }
 
-main img {
-    margin: 10px;
-    border: 2px solid black ;
+.img-container {
+    border: 2px solid black;
+}
 
+.img-container img {
+    width: 100%;
+    vertical-align: middle;
 }
 
 main h2 {
-    margin: 30px 0 0 0;
-    width: 35%;
-}
-
-#gallery-post {
-    width: 350px;
-    color: white;
-    padding: 15px 15px;
-    font-size: 2em;
-    margin: 20px 0;
-    background-color: rgb(39, 36, 36) ;
-    text-transform: uppercase;
+    margin: 25px 0 20px;
+    font-weight: 700;
 }
 
 main p {
     width: 28%;
-}
-
-main p:nth-last-child(1) {
-    margin: 0 0 30px 0;
+    text-align: center;
+    margin: 15px;
+    line-height: 1.5;
 }
 
 main p a {
     text-decoration: none;
-    font-weight: 700;
     color: black;
+    font-weight: 700;
 }
 
 footer {
@@ -167,15 +161,16 @@ footer nav ul li a {
 @media (max-width: 960px) {
 
     main h1 {
-        width: 80%;
+        width: 60%;
         text-align: center;
     }
 
-    main img {
+    .img-container {
         width: 90%;
     }
 
     main p {
         width: 70%;
     }
+    
 }
