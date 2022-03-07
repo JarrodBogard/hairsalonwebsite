@@ -169,6 +169,7 @@ footer nav ul li a {
     main h1 {
         width: 80%;
         text-align: center;
+        line-height: 1;
     }
 
     main img {
